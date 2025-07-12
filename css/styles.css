@@ -17,6 +17,7 @@ li {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 a {
@@ -35,19 +36,23 @@ p {
 }
 
 .container {
-  width: 1158px;
+  /* width: 1158px; */
+  width: 288px;
   margin: 0 auto;
-  padding: 0 15px 0 15px;
+  /* padding: 0 15px 0 15px; */
+  padding: 0 1px 0 1px;
 }
 
 .section {
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  padding: 96px 0;
 }
 
 /* ------------------Header----------------- */
 .header {
   border-bottom: 1px solid #e7e9fc;
-  padding: 24px 0;
+  /* padding: 24px 0; */
+  padding: 16px 0;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -64,7 +69,7 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-right: 76px;
+  /* margin-right: 76px; */
 }
 
 .logo-part {
@@ -146,28 +151,37 @@ p {
 .hero-banner {
   background-color: #2e2f42;
   text-align: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  /* padding-top: 188px;
+  padding-bottom: 188px; */
+  padding-top: 72px;
+  padding-bottom: 72px;
 
   background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url("../images/people-office.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1440px;
+  /* max-width: 1440px; */
+  max-width: 320px;
   background-position: center;
 }
 
 .hero-title {
   color: #ffffff;
-  font-size: 56px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  max-width: 216px;
+
+  /* font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
-  text-align: center;
-  max-width: 496px;
-
+  max-width: 496px; */
+  /* margin-bottom: 48px; */
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 .button {
@@ -228,29 +242,47 @@ p {
 
 .features-content {
   display: flex;
-  gap: 24px;
+  /* <<<<<mobile>>>>> */
+  flex-direction: column;
+  /* <<<<<mobile>>>>> */
+
+  /* gap: 24px; */
+  gap: 72px;
   padding: 0;
   margin: 0;
 }
 
 .features-text {
   flex: 1;
-  min-width: 264px;
+  /* min-width: 264px; */
+  min-width: 288px;
 }
 
 .features-title {
   color: #2e2f42;
-  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  margin-bottom: 8px;
+
+  /* font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.02em;
-  margin-bottom: 8px;
+  letter-spacing: 0.02em; */
 }
 
 .features-description {
-  line-height: 1.5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: 0.32px;
-  max-width: 264px;
+  max-width: 288px;
+
+  /* line-height: 1.5;
+  letter-spacing: 0.32px;
+  max-width: 264px; */
 }
 
 /* ------------------OUR TEAM ----------------- */
@@ -271,12 +303,17 @@ p {
 
 .team-list {
   display: flex;
-  flex-direction: row;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
+
+  /* flex-direction: row;
+  gap: 24px; */
 }
 
 .team-card {
   box-sizing: border-box;
+
   width: 264px;
   background-color: #ffffff;
   text-align: center;
@@ -360,14 +397,17 @@ p {
 
 .our-portfolio-cards {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 48px;
+
+  /* flex-direction: row;
   gap: 24px;
   flex-wrap: wrap;
-  row-gap: 48px;
+  row-gap: 48px; */
 }
 
 .our-portfolio-card {
-  width: calc((100% - 48px) / 3);
+  /* width: calc((100% - 48px) / 3); */
 
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -433,7 +473,7 @@ p {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02px;
-  margin-top: 16px;
+  /*не знаю нахуя оно было margin-top: 16px; */
 }
 
 .footer {
@@ -441,13 +481,18 @@ p {
   padding: 100px 0;
 }
 
-.footer-text-block {
+/* .footer-text-block {
   width: 266px;
   margin-right: 120px;
-}
+} */
 
 .footer-container {
   display: flex;
+
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
+
   align-items: center;
   padding: 0 15px;
 }
@@ -485,7 +530,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
+  /* так было в декстопе margin-bottom: 16px; */
 }
 
 .socials-footer-container {
@@ -531,6 +576,7 @@ p {
   align-items: baseline;
 }
 .footer-text-block {
+  text-align: center;
   max-width: 264px;
   min-width: 264px;
 }
@@ -541,8 +587,10 @@ p {
 
 .footer-form {
   display: flex;
-  flex-direction: row;
-  gap: 24px;
+  flex-direction: column;
+  gap: 16px;
+  /* flex-direction: row;
+  gap: 24px; */
 }
 
 .subscribe-container {
@@ -555,10 +603,12 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
 .footer-input {
   display: flex;
+
   flex-direction: row;
   gap: 24px;
   width: 264px;
@@ -585,7 +635,7 @@ p {
 }
 
 .footer-button {
-  min-width: 165px;
+  width: 165px;
   height: 40px;
   padding: 8px 24px;
   display: flex;
@@ -661,6 +711,9 @@ p {
 .modal-overlay.is-open {
   opacity: 1;
   pointer-events: auto;
+
+  /* ,,,,,,,,,,,,,delete later if need,,,,,,,,,,,, */
+  display: none;
 }
 
 .modal-title {
