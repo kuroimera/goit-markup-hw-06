@@ -161,7 +161,7 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   /* max-width: 1440px; */
-  max-width: 320px;
+  /* max-width: 320px; */
   background-position: center;
 }
 
