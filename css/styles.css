@@ -40,7 +40,7 @@ p {
   width: 288px;
   margin: 0 auto;
   /* padding: 0 15px 0 15px; */
-  padding: 0 1px 0 1px;
+  padding: 0;
 }
 
 /* @media screen (min-width: 1158px) {
@@ -188,7 +188,7 @@ p {
   padding-bottom: 72px;
 
   background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url("../images/people-office.jpg");
+    url("../images/hero-mob1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   /* max-width: 1440px; */
@@ -450,6 +450,10 @@ p {
 .our-portfolio-image-container {
   position: relative;
   overflow: hidden;
+}
+
+.our-portfolio-image {
+  object-fit: cover;
 }
 
 .overlay-text {
@@ -742,7 +746,7 @@ p {
   pointer-events: auto;
 
   /* ,,,,,,,,,,,,,delete later if need,,,,,,,,,,,, */
-  /* display: none; */
+  display: none;
 }
 
 .modal-title {
