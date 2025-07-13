@@ -161,7 +161,8 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   /* max-width: 1440px; */
-  max-width: 320px;
+
+  /* max-width: 320px; ось ця фигня хиро банер вливо пихала*/
   background-position: center;
 }
 
@@ -243,7 +244,7 @@ p {
 .features-content {
   display: flex;
   /* <<<<<mobile>>>>> */
-  flex-direction: column;
+  flex-wrap: wrap;
   /* <<<<<mobile>>>>> */
 
   /* gap: 24px; */
@@ -397,7 +398,7 @@ p {
 
 .our-portfolio-cards {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 48px;
 
   /* flex-direction: row;
@@ -486,17 +487,6 @@ p {
   margin-right: 120px;
 } */
 
-.footer-container {
-  display: flex;
-
-  flex-direction: column;
-  gap: 72px;
-  align-items: center;
-
-  align-items: center;
-  padding: 0 15px;
-}
-
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -574,9 +564,12 @@ p {
   justify-content: flex-start;
   align-items: flex-start;
   align-items: baseline;
+  flex-direction: column;
+  gap: 72px;
+  padding: 0 15px;
 }
+
 .footer-text-block {
-  text-align: center;
   max-width: 264px;
   min-width: 264px;
 }
