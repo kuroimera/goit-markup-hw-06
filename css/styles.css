@@ -43,16 +43,6 @@ p {
   padding: 0;
 }
 
-/* @media screen (min-width: 1158px) {
-  .container {
-    width: 1158px;
-    padding: 0 15px 0 15px;
-  }
-  .section {
-    padding: 120px 0;
-  }
-} */
-
 .section {
   /* padding: 120px 0; */
   padding: 96px 0;
@@ -123,7 +113,9 @@ p {
 .navigation-list {
   display: flex;
   gap: 40px;
-  margin-right: 332px;
+  /* margin-right: 332px; */
+
+  display: none;
 }
 
 .navigation-item {
@@ -161,10 +153,13 @@ p {
   font-style: normal;
   display: flex;
   gap: 40px;
+
+  display: none;
 }
 
 .contact-link {
   font-style: normal;
+  font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
@@ -188,13 +183,20 @@ p {
   padding-bottom: 72px;
 
   background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url("../images/hero-mob1x.jpg");
+    url("../images/hero-banner-mob.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   /* max-width: 1440px; */
 
   /* max-width: 320px; ось ця фигня хиро банер вливо пихала*/
   background-position: center;
+}
+
+@media (min-resolution: 192dpi) {
+  .banner {
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url("../images/hero-mob@2x.jpg");
+  }
 }
 
 .hero-title {
@@ -270,6 +272,8 @@ p {
   align-items: center;
   justify-content: center;
   height: 112px;
+
+  display: none;
 }
 
 .features-content {
@@ -363,6 +367,9 @@ p {
   background-color: #404bbf;
 }
 
+.team-card-image {
+}
+
 .team-member-name {
   color: #2e2f42;
   font-size: 20px;
@@ -389,7 +396,7 @@ p {
   justify-content: center;
   gap: 24px;
   margin-top: 8px;
-  padding-left: 0;
+  padding: 0 16px;
   list-style: none;
 }
 
@@ -454,6 +461,8 @@ p {
 
 .our-portfolio-image {
   object-fit: cover;
+  width: 288px;
+  height: 280px;
 }
 
 .overlay-text {
@@ -510,12 +519,14 @@ p {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02px;
-  /*не знаю нахуя оно было margin-top: 16px; */
+  align-self: flex-start;
+  /*не знаю зач оно было margin-top: 16px; */
 }
 
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0;
+  /* padding: 100px 0; */
+  padding: 96px 0;
 }
 
 /* .footer-text-block {
@@ -562,9 +573,10 @@ p {
 .socials-footer-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
   width: 208px;
-  margin-right: 80px;
+  /* margin-right: 80px; */
 }
 
 .social-links-icons-footer {
@@ -597,17 +609,18 @@ p {
 
 .footer-container {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-items: baseline;
+  align-items: center;
   flex-direction: column;
   gap: 72px;
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 
 .footer-text-block {
   max-width: 264px;
   min-width: 264px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-icons {
@@ -617,6 +630,7 @@ p {
 .footer-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
   /* flex-direction: row;
   gap: 24px; */
@@ -624,6 +638,10 @@ p {
 
 .subscribe-container {
   width: 288px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   /* width: 453px; */
 }
 
@@ -669,8 +687,6 @@ p {
   height: 40px;
   padding: 8px 24px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   background: #4d5ae5;
   border: none;
   border-radius: 4px;
@@ -1168,4 +1184,261 @@ p {
 .social-link-icons-menu:hover,
 .social-link-icons-menu:focus {
   background-color: #31d0aa;
+}
+
+/* ---------------TABLET------------- */
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 736px;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .logo {
+    padding: 0;
+    margin-right: 120px;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header {
+    padding: 12px 0;
+  }
+
+  .navigation-list {
+    display: flex;
+    gap: 40px;
+    /* margin-right: 121px; */
+  }
+
+  .navigation-item {
+    padding: 0 0 28px 0;
+  }
+  .contact-list {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 119px;
+  }
+  .burger-menu-button {
+    display: none;
+  }
+  .burger {
+    display: none;
+  }
+
+  .hero-banner {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url("../images/hero-banner-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .banner {
+      background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url("../images/hero-banner-tablet@2x.jpg");
+    }
+  }
+
+  .hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+    max-width: 496px;
+
+    margin: 0 auto;
+    margin-bottom: 36px;
+  }
+
+  .features-content {
+    gap: 72px 24px;
+  }
+
+  .features-icons {
+    display: none;
+  }
+
+  .features-text {
+    min-width: 356px;
+  }
+
+  .features-title {
+    text-align: left;
+  }
+
+  .features-description {
+    max-width: 356px;
+  }
+
+  .team-list {
+    padding: 0 92px;
+    gap: 64px 24px;
+  }
+
+  .our-portfolio-cards {
+    gap: 72px 24px;
+  }
+
+  .our-portfolio-image {
+    width: 356px;
+    height: 300px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-left: 92px;
+  }
+  .footer-text-block {
+    align-items: flex-start;
+  }
+  .socials-footer-container {
+    align-items: flex-start;
+  }
+  .footer-form {
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  .subscribe-container {
+    width: 453px;
+    align-items: flex-start;
+  }
+
+  .modal {
+    min-height: 584px;
+    width: 408px;
+    padding: 72px 24px 24px 24px;
+  }
+}
+
+/* ---------------DESKTOP------------- */
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+    padding: 0 15px 0 15px;
+  }
+  .logo {
+    margin-right: 76px;
+  }
+  .section {
+    padding: 120px 0;
+  }
+
+  .header {
+    padding: 24px 0;
+  }
+
+  .logo {
+    margin-right: 76px;
+  }
+
+  /* .navigation-list {
+    margin-right: 332px;
+  } */
+
+  .navigation-item {
+    padding: 0 0 26px 0;
+  }
+
+  .contact-list {
+    flex-direction: row;
+    gap: 40px;
+    max-width: 344px;
+  }
+
+  .contact-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+  }
+
+  .hero-banner {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    /* max-width: 1440px;
+    margin: 0 auto; коли залишаю ці значення на всіх девайсах, то картинка просто має ширину і на девайсах з ширшим екраном не розтягується, а створює пусті полоси по краях*/
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url("../images/hero-banner-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  @media (min-resolution: 192dpi) {
+    .banner {
+      background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url("../images/hero-banner-desktop@2x.jpg");
+    }
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
+
+  .features-content {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .features-icons {
+    padding: 24px 100px;
+    border: solid 1px #8e8f99;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+  }
+  .features-text {
+    flex: 1;
+    min-width: 264px;
+  }
+  .features-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  .features-description {
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    max-width: 264px;
+  }
+
+  .team-list {
+    padding: 0;
+  }
+  .our-portfolio-cards {
+    gap: 48px 24px;
+  }
+
+  .footer-container {
+    flex-wrap: nowrap;
+    gap: 0px;
+  }
+
+  .footer-text-block {
+    margin-right: 120px;
+  }
+  .socials-footer-container {
+    margin-right: 80px;
+  }
+
+  .subscribe-container {
+  }
 }
